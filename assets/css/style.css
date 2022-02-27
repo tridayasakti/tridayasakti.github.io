@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* root css */
+:root{
+    --color-1:#6d6b6b;
+    --color-2:#1FFF11;
+    --color-3:#ffffff;
+    --black-100:#f7f7f7;
+    --shadow-black-100:0 5px 15px rgba(0,0,0,0.1);
+    --shadow-black-300:0 5px 15px rgba(0,0,0,0.3);
+    --bg-light:#ffffff;
+    --bg-dark:#2b2c2f;
+}
+/* akhir root css */
+
+/* body */
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    margin:0;
+    padding:0;
+}
+body.dark{
+    --color-1:var(--color-3);
+    --bg-light:var(--bg-dark);
+    --shadow-black-100:var(--shadow-black-300);
+}
+/* akhir body */
+
+/* navbar-1 */
+.navbar-1{
+    height: 96px;
+}
+.navbar-1-left{
+    height: 96px;
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+}
+.navbar-1 i{
+    color: #4fc446;
+}
+/* .navbar-1-left img{
+    width: 80%;
+} */
+.navbar-1-right{
+    height: 96px;
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: end;
+}
+.navbar-1-right a{
+    color: var(--color-1);
+}
+/* akhir navbar-1 */
+
+/* navbar */
+.navbar{
+    /* background-color: var(--bg-light) !important; */
+    background-color: #1FFF11 !important;
+    border-bottom: 5px solid #FDFD05;
+}
+.navbar-shrink{
+    box-shadow: var(--shadow-black-100) !important;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+    background-color: #43dc38;
+}
+.navbar-toggler i{
+    color: var(--color-3);
+}
+.navbar-brand{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* color:var(--color-1) !important; */
+    text-shadow: 1px 1px 8px rgb(191, 191, 191) !important;
+    color:white !important;
+}
+.nav-link.active{
+    /* background-color: var(--color-2) !important; */
+    /* color: var(--color-3) !important; */
+    color: #FDFD05 !important;
+    text-shadow: 1px 1px 8px rgb(191, 191, 191) !important;
+    /* border-radius: 30px !important; */
+    /* box-shadow: var(--shadow-black-100); */
+}
+.navbar li{
+    margin-left:30px;
+}
+.navbar li a{
+    color:white !important;
+    /* color:var(--color-1) !important; */
+    text-align: center !important;
+    text-shadow: 1px 1px 8px rgb(191, 191, 191) !important;
+}
+.fix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+/* akhir navbar */
+
+/* home */
+.mod-home{
+    margin-top: 60px !important;
+}
+.home{
+    color:var(--color-1);
+    /* margin-top:60px; */
+    /* padding:80px 0 250px 0; */
+    /* background-color: var(--bg-light); */
+    /* background-color: red; */
+    overflow-x:hidden;
+}
+.home-res{
+    flex-direction: row !important;
+}
+/* .home .h1-1{
+    margin-top:50px;
+} */
+.home .h1-2{
+    margin-bottom:20px;
+}
+.home h1{
+    font-weight: 700;
+    font-size:40px;
+}
+.home-p{
+    margin-bottom: 20px;
+    font-size:18px;
+}
+.home-nama{
+    color:var(--color-2);
+}
+.home-kiri{
+    text-align: left;
+}
+.home-kanan{
+    position:relative;
+}
+.home-kanan .img1{
+    position: absolute !important;
+    /* top:25px !important; */
+    left:25% !important;
+    transition: all 0.5s;
+}
+.home-kanan .img2{
+    position: absolute !important;
+    top:0 !important;
+    left:32% !important;
+    z-index:5 !important;
+    transition: all 0.5s;
+}
+.home-kanan:hover .img2{
+    left:calc(32% + 20px) !important;
+}
+.home-kanan:hover .img1{
+    top:0px !important;
+}
+.btn-edited{
+    padding:10px 30px !important;
+    border-radius: 30px;
+    background-color: var(--color-2) !important;
+    border:0 !important;
+    box-shadow: var(--shadow-black-100);
+}
+/* akhir home */
+
+/* carousel */
+.carousel-edited{
+    width: 100%;
+    height: 65vh;
+}
+.carousel-edited img{
+    width: 100%;
+    height: 100%;
+    /* padding: 40px;
+    border-radius: 0 90px 0 90px; */
+}
+/* akhir carousel */
+
+/* tentang saya */
+.tentang-saya{
+    background-color: var(--bg-light);
+    padding:100px 0 180px 0;
+    color:var(--color-1);
+    overflow-x: hidden;
+}
+.tentang-saya p{
+    font-size:18px;
+}
+.tentang-saya li{
+    font-size:18px;
+}
+.header-title{
+    text-align: center;
+    margin-bottom: 40px !important;
+}
+.header-title h1{
+    font-weight: 700;
+    font-size:40px;
+}
+.tentang-saya-kiri{
+    /* position:relative; */
+    width: 100%;
+    height: 300px;
+}
+.tentang-saya-kiri .img1{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+/* .tentang-saya-kiri .img2{
+    position:absolute;
+    top:0;
+    left:25%;
+    transition: all 0.5s;
+} */
+/* .tentang-saya-kanan{
+    padding-top: 20px;
+} */
+.tentang-saya-kanan p{
+    margin-bottom:25px !important;
+}
+.ts-sub-title{
+    color:var(--color-2) !important;
+}
+.tentang-saya-kiri:hover .img1{
+    top:-10px;
+}
+.tentang-saya-kiri:hover .img2{
+    left:calc(25% - 20px);
+}
+/* akhir tentang saya */
+
+/* modal profil */
+.modal-profil .gambar-modal{
+    width: 100%;
+    height: 300px;
+    padding: 0 350px;
+}
+.gambar-modal img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+/* akhor modal profil */
+
+/* skill */
+.skill{
+    padding:80px 0;
+    color:var(--color-1) !important;
+    font-size: 18px;
+    background-color: var(--bg-light);
+}
+.skill .accordion-item{
+    border:0px;
+    box-shadow:var(--shadow-black-100);
+    margin-bottom: 25px;
+    border-radius: 20px;
+    background-color: var(--bg-light);
+}
+.skill .accordion-button{
+    box-shadow: none !important;
+    border-radius: 20px !important;
+    color:var(--color-1);
+    background-color: var(--bg-light);
+}
+.bg-awal{
+    background-color:var(--color-2) !important;
+}
+.warna-awal{
+    color:var(--color-3) !important;
+}
+.add-bg-acc{
+    background-color: var(--color-2) !important;
+    color:var(--color-3) !important;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    display:none;
+}
+.accordion-button::after {
+    background-image: none;
+    display:none;
+}
+i.bi.bi-arrow-down-short.ms-auto{
+    font-size:16px !important;
+    padding:0 !important;
+    font-weight: 700;
+    transform: rotate(0) !important;
+    transition: all 0.5s;
+}
+i.bi.bi-arrow-down-short.ms-auto.putar{
+    transform: rotate(180deg) !important;
+}
+/* akhir skill */
+
+/* portfolio */
+.portfolio{
+    padding:80px 0;
+    color:var(--color-1) !important;
+    font-size: 18px;
+    background-color: var(--bg-light);
+}
+.portfolio-gambar, .portfolio-detail{
+    padding:20px;
+}
+.portfolio-gambar{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    padding:0;
+    box-shadow: var(--shadow-black-100);
+}
+.portfolio-gambar img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+.owl-dots{
+    text-align: center;
+}
+.owl-carousel button.owl-dot{
+    height:5px;
+    width:15px;
+    border-radius: 3px;
+    background-color: var(--color-1);
+    margin:2px;
+}
+.owl-carousel button.owl-dot.active{
+    background-color: var(--color-2);
+}
+/* akhir portfolio */
+
+/* kontak */
+.kontak{
+    padding:80px 0;
+    color:var(--color-1) !important;
+    font-size: 18px;
+    background-color: var(--bg-light);
+}
+.kontak-kiri span{
+    height:50px;
+    width:50px;
+    background-color: var(--bg-light);
+    color:var(--color-2);
+    border-radius:50%;
+    padding:15px;
+    margin-right:20px;
+    box-shadow: var(--shadow-black-100);
+}
+.kontak-kiri .p2{
+    margin-left: 70px;
+}
+.form-control{
+    box-shadow: none !important;
+    margin-bottom:20px !important;
+    border-radius:18px !important;
+    padding:10px !important;
+    box-shadow: var(--shadow-black-100) !important;
+    border:0px !important;
+    background-color: var(--bg-light);
+    color: var(--color-1);
+}
+.form-control:focus{
+    background-color: var(--bg-light);
+    color: var(--color-1);
+}
+/* akhir kontak */
+
+/* footer */
+.footer{
+    padding:80px 0 10px 0;
+    color:var(--color-3) !important;
+    font-size: 18px;
+    background-color: var(--color-2);
+}
+.footer a{
+    color:var(--color-3) !important;
+    text-decoration: none !important;
+}
+/* akhir footer */
+
+/* dark mode */
+.dark-mode{
+    position: fixed !important;
+    right: 0 !important;
+    top:50% !important;
+    height:40px !important;
+    width:40px !important;
+    border-radius: 50% !important;
+    background-color: #2b2c2f !important;
+    z-index: 100 !important;
+    box-shadow: var(--black-100);
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    cursor: pointer;
+}
+.dark-mode i{
+    color: #ffffff;
+    font-size: 20px;
+}
+.bg-dark-light{
+    background-color: #0075FF !important;
+}
+/* akhir dark mode */
+
+
+
+/* responsive */
+
+/* notebook */
+@media(max-width:992px){
+    .navbar li{
+        margin-left:0 !important;
+    }
+
+    /* modal profil */
+    .modal-profil .gambar-modal{
+        padding: 0 20px;
+    }
+    /* akhir modal profil */
+}
+/* akhir notebook */
+
+/* tablet */
+@media(max-width:768px){
+
+    /* home */
+    .home-res{
+        flex-direction: column-reverse !important;
+    }
+    .home h1{
+        font-size:30px;
+    }
+    .home-p{
+        font-size:14px;
+    }
+    .home .h1-1{
+        margin-top:300px;
+    }
+    .home-kiri{
+        text-align: center !important;
+    }
+    .home-kanan .img1{
+        top:-25px !important;
+        left:25% !important;
+    }
+    .home-kanan .img2{
+        top:-55px !important;
+        left:32% !important;
+    }
+    .home-kanan:hover .img2{
+        left:calc(32% + 20px) !important;
+    }
+    .home-kanan:hover .img1{
+        top:-45px !important;
+    }
+    /* akhir home */
+
+    /* carousel */
+    .carousel-edited{
+        height: 40vh;
+    }
+    /* akhir carousel */
+
+    /* tentang saya */
+    .tentang-saya-kiri{
+        margin-bottom: 30px;
+    }
+    .tentang-saya-kanan{
+        text-align: center;
+    }
+    .tentang-saya p{
+        font-size:14px;
+    }
+    .tentang-saya li{
+        font-size:14px;
+    }
+    .header-title h1{
+        font-size:30px;
+    }
+    /* akhir tentang saya */
+
+    /* modal profil */
+    .modal-profil .gambar-modal{
+        padding: 0;
+    }
+    /* akhir modal profil */
+
+    /* modal profil */
+    .modal-profil p{
+        font-size:14px;
+        text-align: justify;
+    }
+    .modal-profil li{
+        font-size:14px;
+        text-align: justify;
+    }
+    .modal-profil h4{
+        font-size:16px;
+    }
+
+    /* akhir modal profil */
+
+    /* skill */
+    .skill{
+        font-size: 14px;
+    }
+    /* akhir skill */
+
+    /* portfolio */
+    .portfolio{
+        font-size: 14px;
+    }
+    .portfolio h2{
+        font-size: 20px;
+    }
+    .portfolio-detail{
+        text-align: center;
+    }
+    /* akhir portfolio */
+
+    /* kontak */
+    .kontak{
+        font-size: 14px;
+    }
+    /* akhir kontak */
+
+    /* footer */
+    .footer{
+        font-size: 14px;
+    }
+    .footer h1{
+        font-size: 30px !important;
+    }
+    /* akhir footer */
+
+}
+/* akhir tablet */
+
+/* handphone */
+@media (max-width: 576px){
+    .home h1{
+        font-size:20px;
+    }
+    .home-kanan .img1{
+        text-align: center;
+    }
+    .home-kanan .img2{
+        text-align:center;
+    }
+
+    /* tentang saya */
+    .header-title h1{
+        font-size:20px;
+    }
+    /* akhir tentang saya */
+
+    /* footer */
+    .footer h1{
+        font-size: 20px !important;
+    }
+    /* akhir footer */
+}
+/* akhir handphone */
+
+/* xxs */
+@media (max-width: 400px){
+
+    /* home */
+    .home-kanan .img1{
+        left:0 !important;
+    }
+    .home-kanan .img2{
+        left:10% !important;
+    }
+    .home-kanan:hover .img2{
+        left:40px !important;
+    }
+    .home-kanan:hover .img1{
+        top:-45px !important;
+    }
+    /* akhir home */
+
+    /* tentang saya */
+    .tentang-saya-kiri .img1{
+        left:5%;
+    }
+    .tentang-saya-kiri .img2{
+        left:8%;
+    }
+    .tentang-saya-kiri:hover .img1{
+        top:-10px;
+    }
+    .tentang-saya-kiri:hover .img2{
+        left:calc(5% - 5px);
+    }
+    /* akhir tentang saya */
+}
+/* akhir xxs */
+
+/* akhir responsive */
