@@ -250,12 +250,13 @@ body.dark{
 }
 /* akhor modal profil */
 
-/* skill */
+/* gallery */
 .skill{
     padding:80px 0;
     color:var(--color-1) !important;
     font-size: 18px;
-    background-color: var(--bg-light);
+    /* background-color: var(--bg-light); */
+    background-image: radial-gradient(circle, #ffffa3, #d0ffcd);
 }
 .skill .accordion-item{
     border:0px;
@@ -298,7 +299,30 @@ i.bi.bi-arrow-down-short.ms-auto{
 i.bi.bi-arrow-down-short.ms-auto.putar{
     transform: rotate(180deg) !important;
 }
-/* akhir skill */
+
+.left-gal{
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.top-right-gal,
+.bottom-right-gal{
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.bottom-right-gal{
+    margin-top: 20px;
+}
+.img-gal-front{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+/* akhir gallery */
 
 /* portfolio */
 .portfolio{
@@ -336,6 +360,27 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
     background-color: var(--color-2);
 }
 /* akhir portfolio */
+
+/* modal gallery */
+.owl-car-gal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-gambar{
+    width:80vw;
+    height:80vh;
+    border-radius: 20px;
+    padding:0;
+    box-shadow: var(--shadow-black-100);
+}
+.gallery-gambar img{
+    z-index: 100 !important;
+    border-radius: 20px;
+}
+/* akhir modal gallery */
 
 /* kontak */
 .kontak{
@@ -509,11 +554,22 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
 
     /* akhir modal profil */
 
-    /* skill */
+    /* gallery */
     .skill{
         font-size: 14px;
     }
-    /* akhir skill */
+
+    .left-gal{
+        height: 250px;
+    }
+    .top-right-gal{
+        margin-top: 20px;
+    }
+    .top-right-gal,
+    .bottom-right-gal{
+        height: 250px;
+    }
+    /* akhir gallery */
 
     /* portfolio */
     .portfolio{
@@ -526,6 +582,12 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
         text-align: center;
     }
     /* akhir portfolio */
+
+    /* modal gallery */
+    .gallery-gambar{
+        width:100vw;
+    }
+    /* akhir modal gallery */
 
     /* kontak */
     .kontak{
@@ -562,6 +624,16 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
         font-size:20px;
     }
     /* akhir tentang saya */
+
+    /* gallery */
+    .left-gal{
+        height: 180px;
+    }
+    .top-right-gal,
+    .bottom-right-gal{
+        height: 180px;
+    }
+    /* akhir gallery */
 
     /* footer */
     .footer h1{
