@@ -305,14 +305,24 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
     height: 300px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     cursor: pointer;
+    border-radius: 20px;
+}
+.left-gal:hover{
+    box-shadow: 1px 1px 40px #1FFF11;
+    transition: all 0.5s;
 }
 .top-right-gal,
 .bottom-right-gal{
     width: 100%;
     height: 140px;
-    background-color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     cursor: pointer;
+    border-radius: 20px;
+}
+.top-right-gal:hover,
+.bottom-right-gal:hover{
+    box-shadow: 1px 1px 40px #1FFF11;
+    transition: all 0.5s;
 }
 .bottom-right-gal{
     margin-top: 20px;
@@ -362,22 +372,24 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
 /* akhir portfolio */
 
 /* modal gallery */
-.owl-car-gal{
+.modal-gallery{
+    background-image: radial-gradient(circle, #ffffa3, #d0ffcd);
+}
+.gallery-konten{
     height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
 }
 .gallery-gambar{
-    width:80vw;
-    height:80vh;
-    border-radius: 20px;
-    padding:0;
-    box-shadow: var(--shadow-black-100);
+    width:100% !important;
+    height:100% !important;
+    border-radius: 20px !important;
+    padding:0 !important;
+    box-shadow: var(--shadow-black-100) !important;
 }
 .gallery-gambar img{
-    z-index: 100 !important;
+    width:100%;
+    height:100%;
     border-radius: 20px;
 }
 /* akhir modal gallery */
@@ -584,10 +596,7 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
     /* akhir portfolio */
 
     /* modal gallery */
-    .gallery-gambar{
-        width:100vw;
-        height: 70vw;
-    }
+    
     /* akhir modal gallery */
 
     /* kontak */
