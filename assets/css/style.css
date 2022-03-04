@@ -394,12 +394,19 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
 }
 /* akhir modal gallery */
 
+/* lokasi */
+.map{
+    height: 60vh !important;
+    width: 100% !important;
+}
+/* akhir lokasi */
+
 /* kontak */
 .kontak{
     padding:80px 0;
     color:var(--color-1) !important;
     font-size: 18px;
-    background-color: var(--bg-light);
+    background-image: radial-gradient(circle, #ffffa3, #d0ffcd);
 }
 .kontak-kiri span{
     height:50px;
@@ -428,6 +435,15 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
     background-color: var(--bg-light);
     color: var(--color-1);
 }
+.kontak-kanan{
+    width: 100% !important;
+    /* height: 400px !important; */
+}
+.kontak-kanan img{
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 20px;
+}
 /* akhir kontak */
 
 /* footer */
@@ -436,10 +452,12 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
     color:var(--color-3) !important;
     font-size: 18px;
     background-color: var(--color-2);
+    border-top: 5px solid #FDFD05 !important;
 }
 .footer a{
     color:var(--color-3) !important;
     text-decoration: none !important;
+    text-shadow: 1px 1px 8px rgb(191, 191, 191) !important;
 }
 /* akhir footer */
 
