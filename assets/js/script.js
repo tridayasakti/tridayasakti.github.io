@@ -10,11 +10,11 @@ $(document).ready(function(){
         if($(this).attr('href') !== '#home'){
             $('html,body').animate({
                 scrollTop: tujuan.offset().top -50
-            }, 1000)
+            }, 500)
         }else{
             $('html,body').animate({
                 scrollTop: tujuan.offset().top -160
-            }, 1000)
+            }, 500)
         }   
 
     })
