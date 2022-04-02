@@ -237,6 +237,63 @@ body.dark{
 }
 /* akhir tentang saya */
 
+
+
+
+
+/* berita */
+.berita{
+    background-color: var(--bg-light);
+    padding:50px 0 180px 0;
+    color:var(--color-1);
+    overflow-x: hidden;
+}
+.berita-kiri{
+    /* position:relative; */
+    width: 100%;
+    height: 200px;
+}
+.mod-berita{
+    margin-top: 60px !important;
+}
+.active-berita{
+    background-color: #1FFF11 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    text-shadow: 1px 1px 4px gray;
+}
+.lgi-edited{
+    border: none !important;
+    border-bottom: 1px solid rgb(165, 165, 165) !important;
+    border-radius: 10px !important;
+}
+.list-group-flush .lgi-edited{
+    color: var(--color-1);
+}
+.badge-berita-edited{
+    background-color: #1FFF11 !important;
+    text-shadow: 1px 1px 1px gray;
+    float: left;
+}
+.gambar-berita-cover{
+    /* position:relative; */
+    width: 100%;
+    height:300px;
+    padding: 0 100px !important;
+    padding-bottom: 25px !important;
+}
+.gambar-berita-cover img{
+    /* position:relative; */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px !important;
+}
+/* akhir berita */
+
+
+
+
+
 /* modal profil */
 .modal-profil .gambar-modal{
     width: 100%;
@@ -501,6 +558,14 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
         padding: 0 20px;
     }
     /* akhir modal profil */
+
+    /* berita */
+    .gambar-berita-cover{
+        padding: 0 20px !important;
+        height: 270px;
+        padding-bottom: 25px !important;
+    }
+    /* akhir berita */
 }
 /* akhir notebook */
 
@@ -562,6 +627,17 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
         font-size:30px;
     }
     /* akhir tentang saya */
+
+    /* berita */
+    .berita p{
+        text-align: left !important;
+    }
+    .gambar-berita-cover{
+        padding: 0 20px !important;
+        height: 300px;
+        padding-bottom: 25px !important;
+    }
+    /* akhir berita */
 
     /* modal profil */
     .modal-profil .gambar-modal{
@@ -653,6 +729,17 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
     }
     /* akhir tentang saya */
 
+    /* berita */
+    .berita p{
+        text-align: justify !important;
+    }
+    .gambar-berita-cover{
+        padding: 0 0 !important;
+        height: 270px;
+        padding-bottom: 25px !important;
+    }
+    /* akhir berita */
+
     /* gallery */
     .left-gal{
         height: 180px;
@@ -703,6 +790,14 @@ i.bi.bi-arrow-down-short.ms-auto.putar{
         left:calc(5% - 5px);
     }
     /* akhir tentang saya */
+
+    /* berita */
+    .gambar-berita-cover{
+        padding: 0 0 !important;
+        height: 200px;
+        padding-bottom: 25px !important;
+    }
+    /* akhir berita */
 }
 /* akhir xxs */
 

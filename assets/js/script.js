@@ -24,10 +24,12 @@ $(document).ready(function(){
         if($(this).scrollTop() > 96){
             $('.navbar').addClass('fix')
             $('.home').addClass('mod-home')
+            $('.berita').addClass('mod-berita')
             // $('.navbar').addClass('navbar-shrink')
         }else{
             $('.navbar').removeClass('fix')
             $('.home').removeClass('mod-home')
+            $('.berita').removeClass('mod-berita')
             // $('.navbar').removeClass('navbar-shrink')
         }
     })
